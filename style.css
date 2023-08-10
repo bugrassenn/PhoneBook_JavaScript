@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #1abc9c;
+  --secondary-color: #e74d3ce3;
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+}
+
+.container {
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.85;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* form-group */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+  width: 150px; /* Label genişliği */
+}
+
+.form-group input {
+  width: 380px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+  outline: none;
+}
+
+/* add Button */
+.btn-container {
+  display: flex;
+  width: 450px;
+}
+
+.add {
+  font-weight: bold;
+  margin-left: auto;
+  padding: 10px 20px;
+  background: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.486);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.numberList-container {
+  display: flex;
+  margin-top: 20px;
+  text-align: center;
+  width: 500px;
+  overflow: hidden;
+}
+
+/* Tablo Stili */
+table {
+  width: 500px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Tablo Başlık  */
+th {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  text-decoration-line: underline;
+  table-layout: fixed; /* sabit hücre genişliği */
+}
+
+tr {
+  font-weight: bold;
+}
+
+/* Tek Satırların Arkaplan Rengi */
+tr:nth-child(odd) {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* Çift Satırların Arkaplan Rengi */
+tr:nth-child(even) {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Hücre Stili */
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.btnList {
+  background-color: transparent;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btnList:hover {
+  color: #333;
+  background-color: transparent;
+}

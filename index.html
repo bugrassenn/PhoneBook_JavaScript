@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Book ~ Buğra Şen</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Phone Book</h1>
+      <div class="form-group">
+        <label for="name">Name : </label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="form-group">
+        <label for="name">Phone : </label>
+        <input type="text" name="Phone" id="phone" />
+      </div>
+      <div class="btn-container">
+        <button onclick="addDirectory()" class="add">Ekle</button>
+      </div>
+
+      <div class="numberList-container">
+        <table id="numberList">
+          <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Operations</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
