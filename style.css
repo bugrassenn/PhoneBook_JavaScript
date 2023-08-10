@@ -69,7 +69,7 @@ h1 {
 /* add Button */
 .btn-container {
   display: flex;
-  width: 450px;
+  width: 100%;
 }
 
 .add {
